@@ -116,6 +116,7 @@ param_scheduler = [
 #       or not by default.
 #   - `base_batch_size` = (8 GPUs) x (32 samples per GPU).
 auto_scale_lr = dict(enable=False, base_batch_size=256)
+
 model = dict(
     cls_head=dict(num_classes=2))
 load_from = 'https://download.openmmlab.com/mmaction/v1.0/recognition/tsn/tsn_imagenet-pretrained-r50_8xb32-1x1x3-100e_kinetics400-rgb/tsn_imagenet-pretrained-r50_8xb32-1x1x3-100e_kinetics400-rgb_20220906-cd10898e.pth'
